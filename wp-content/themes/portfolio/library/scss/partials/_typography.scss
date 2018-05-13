@@ -1,0 +1,37 @@
+/*
+	Site-wide Typography
+*/
+
+$header-font: 'Roboto Condensed', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+.header-font{
+	font-family:$header-font;
+}
+
+.body-font{
+	font-family:$body-font;
+}
+
+h1, h2, h3{
+	font-family:$header-font;
+	color:$main-1;
+}
+
+h1{
+	font-size: 20px;
+	@include bp(up992) {
+		font-size:26px;
+	}
+}
+
+h4, h5, h6{
+	font-family:$body-font;
+	font-weight:800;
+	color:$main-2;
+}
+
+p{
+	font-family:$body-font;
+	font-size:16px;
+}

@@ -1,0 +1,40 @@
+/*
+    Site-wide Mixins
+*/
+
+/*
+    Media Queries
+*/
+
+@mixin bp($point) {
+  @if $point == up1200 {
+    @media (min-width: 1200px) { @content; }
+  }
+  @if $point == down1199 {
+    @media (max-width: 1199px) { @content; }
+  }
+  @else if $point == up992 {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == down992 {
+    @media (max-width: 991px) { @content; }
+  }
+  @else if $point == up768 {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == down767 {
+    @media (max-width: 767px)  { @content; }
+  }
+}
+
+/*
+    Transition
+    Usage: @include transition(all 0.2s ease-in-out);
+*/
+
+@mixin transition($transition...) {
+  $prefixes:      ("-webkit-", "" );
+  @each $prefix in $prefixes {
+    #{$prefix}transition: $transition;
+  }
+}

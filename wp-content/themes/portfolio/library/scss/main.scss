@@ -1,0 +1,11 @@
+/* 
+	Importing scss structure:
+*/
+
+/* Partials */
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/typography";
+
+/* Pages */
+@import "pages/home";

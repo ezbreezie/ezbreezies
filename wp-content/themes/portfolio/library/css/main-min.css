@@ -1,0 +1,58 @@
+/* 
+	Importing scss structure:
+*/
+/* Partials */
+/*
+    Site-wide Mixins
+*/
+/*
+    Media Queries
+*/
+/*
+    Transition
+    Usage: @include transition(all 0.2s ease-in-out);
+*/
+/*
+	Site-wide Variables 
+*/
+.main-1 {
+  color: #50bdcc; }
+
+.main-2 {
+  color: #ff7ebf; }
+
+.bg_main-1 {
+  background: #50bdcc; }
+
+.bg_main-2 {
+  background: #ff7ebf; }
+
+/*
+	Site-wide Typography
+*/
+.header-font {
+  font-family: "Roboto Condensed", sans-serif; }
+
+.body-font {
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #50bdcc; }
+
+h1 {
+  font-size: 20px; }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 26px; } }
+
+h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #ff7ebf; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+/* Pages */
