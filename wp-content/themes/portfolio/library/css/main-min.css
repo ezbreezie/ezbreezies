@@ -56,3 +56,9 @@ p {
   font-size: 16px; }
 
 /* Pages */
+html, body {
+  height: 100vh;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 65%, #50bdcc 100%);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 65%, #50bdcc 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 65%, #50bdcc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='$main-1',GradientType=0 ); }
