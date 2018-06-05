@@ -37,7 +37,7 @@ function ezbreezies_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'ezbreezies_scripts' );
 
-
+show_admin_bar( false );
 
 
 
