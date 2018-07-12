@@ -112,7 +112,7 @@ p{
 }
 
 .weather-header h1{
-	margin-bottom:5px;
+	margin-bottom:7px;
 
 }
 
@@ -143,12 +143,12 @@ $session = curl_init($yql_query_url);
 curl_setopt($session, CURLOPT_RETURNTRANSFER,true);
 $json = curl_exec($session);
 
-$phpObj =  json_decode($json);
+$weather_data =  json_decode($json);
 
-$condition = $phpObj->query->results->channel->item->condition->text;
-$temperature = $phpObj->query->results->channel->item->condition->temp;
-$rise = $phpObj->query->results->channel->astronomy->sunrise;
-$set = $phpObj->query->results->channel->astronomy->sunset;
+$condition = $weather_data->query->results->channel->item->condition->text;
+$temperature = $weather_data->query->results->channel->item->condition->temp;
+$rise = $weather_data->query->results->channel->astronomy->sunrise;
+$set = $weather_data->query->results->channel->astronomy->sunset;
 
 ?>
 
